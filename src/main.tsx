@@ -8,7 +8,7 @@ import App from "./App";
 const OriginalWebSocket = window.WebSocket;
 window.WebSocket = function() {
   console.log("✅ Перехвачена попытка создания вебсокет соединения, перенаправляем на наш сервер");
-  return new OriginalWebSocket('wss://my-messenger-app1.onrender.com');
+  return new OriginalWebSocket('wss://late-boar-61-0qc6cgsx7fk6.2gerch2.deno.net');
 } as any;
 
 createRoot(document.getElementById("root")!).render(
