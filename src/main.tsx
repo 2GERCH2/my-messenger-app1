@@ -8,7 +8,7 @@ import App from "./App";
 const OriginalWebSocket = window.WebSocket;
 window.WebSocket = function() {
   console.log("✅ Перехвачена попытка создания вебсокет соединения, перенаправляем на наш сервер");
-  return new OriginalWebSocket('wss://botelln-server.onrender.com');
+  return new OriginalWebSocket('wss://my-messenger-app1.onrender.com');
 } as any;
 
 createRoot(document.getElementById("root")!).render(
